@@ -1,0 +1,117 @@
+body
+{
+    background: #000;
+    height: 900px;
+    width: 100%;
+    overflow: hidden;
+
+    -webkit-transform: translateZ(0);
+}
+
+/* общие стили для луча */
+.light
+{
+    position: absolute;
+    left: -1%;
+    width: 4px;
+    height: 90%;
+    -webkit-transition: all 20s linear;
+}
+
+/* --------------- */
+
+
+.light0
+{
+    background: -webkit-linear-gradient(top,
+        #EB2915,
+        #EB2915 33%,
+        #3DE131 33.1%,
+        #3DE131 66%,
+        #EBDE15 66.1%);
+}
+
+.light0_play_yes
+{
+    left: 110%;
+
+    -webkit-transform: rotate(-90deg);
+       -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+         -o-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+
+.light1
+{
+    background: -webkit-linear-gradient(bottom, #1dadff 0%, #FF00FF 100%)
+}
+
+.light1_play_yes
+{
+    left: 110%;
+
+    -webkit-transform: rotate(160deg);
+       -moz-transform: rotate(160deg);
+        -ms-transform: rotate(160deg);
+         -o-transform: rotate(160deg);
+            transform: rotate(160deg);
+}
+
+.light2
+{
+    background: -webkit-linear-gradient(-45deg,
+        #003fff 2%,
+        #ffffff 14%,
+        #003fff 46%,
+        #00ff9d 68%,
+        #ffffff 85%,
+        #00ff9d);
+}
+
+.light2_play_yes
+{
+    left: 110%;
+
+    -webkit-transform: rotate(-80deg);
+       -moz-transform: rotate(-80deg);
+        -ms-transform: rotate(-80deg);
+         -o-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+}
+
+.light3
+{
+    background: -webkit-linear-gradient(top,
+        #fff,
+        #fff 25%,
+
+        #000 25.1%,
+        #000 27%,
+
+        #0096ff 27.1%,
+        #0096ff 50%,
+
+        #000 50.1%,
+        #000 52%,
+
+        #fff 52.1%,
+        #fff 75%,
+
+        #000 75.1%,
+        #000 77%,
+
+        #0096ff 77.1%);
+}
+
+.light3_play_yes
+{
+    left: 110%;
+
+    -webkit-transform: rotate(80deg);
+       -moz-transform: rotate(80deg);
+        -ms-transform: rotate(80deg);
+         -o-transform: rotate(80deg);
+            transform: rotate(80deg);
+}
+
