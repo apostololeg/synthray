@@ -1,3 +1,3 @@
-====SyntRay
+#SyntRay
 
 Create you light
