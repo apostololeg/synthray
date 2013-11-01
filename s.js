@@ -1,7 +1,7 @@
 var lightCount = 4,
     currentLight = 0,
     // частота создания лучей
-    frequency = 1000;
+    frequency = 13000;
 
 
 function getLight( num ) {
@@ -19,13 +19,10 @@ function move( obj ) {
 
     // запилить ROTATE независимый от стилей конкретного луча
 
-    // плавно появляем
-    obj.fadeIn(500);
     setTimeout(function() {
-        // light1
-        // light1 light1_play_yes
-        obj.addClass( 'light' + obj.attr('class').match(/light(\d)/)[1] + '_play_yes' );
-    }, 1000)
+        obj.addClass( 'play_yes' );
+        obj.addClass( 'right' );
+    }, 1000);
 
 };
 
@@ -47,9 +44,7 @@ function createLight( num ) {
 function _do( num ) {
 
     var light = createLight( num ),
-        animationDuration = parseInt( light.css('-webkit-transition-duration')*1000 );
-
-        console.log( parseInt( light.css('-webkit-transition-duration') ) );
+        animationDuration = parseInt( light.css('-webkit-transition-duration' ) )*1000;
 
     // задержка перед анимацией
     setTimeout(function() {
@@ -60,7 +55,9 @@ function _do( num ) {
         // удаляем
         setTimeout(function() { light.remove() }, animationDuration);
 
-    }, frequency);
+        setTimeout(_do, frequency);
+
+    }, 1000);
 
 }
 
@@ -77,8 +74,3 @@ function getRnd() {
 }
 
 _do();
-setInterval(function () {
-
-    _do();
-
-}, 7000);

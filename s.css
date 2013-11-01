@@ -12,10 +12,17 @@ body
 .light
 {
     position: absolute;
-    left: -1%;
+    left: -25%;
+    top: -5%;
     width: 4px;
     height: 90%;
-    -webkit-transition: all 20s linear;
+    -webkit-transition: all 30s linear;
+    /*box-shadow: 0 0 300px 200px;*/
+}
+
+.right
+{
+    left: 150%;
 }
 
 /* --------------- */
@@ -25,16 +32,15 @@ body
 {
     background: -webkit-linear-gradient(top,
         #EB2915,
-        #EB2915 33%,
-        #3DE131 33.1%,
+        #ff6969 33%,
+        #3bff3b 33.1%,
         #3DE131 66%,
         #EBDE15 66.1%);
+    /*box-shadow: #0b320e 0 0 300px 200px;*/
 }
 
-.light0_play_yes
+.light0.play_yes
 {
-    left: 110%;
-
     -webkit-transform: rotate(-90deg);
        -moz-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
@@ -44,13 +50,12 @@ body
 
 .light1
 {
-    background: -webkit-linear-gradient(bottom, #1dadff 0%, #FF00FF 100%)
+    background: -webkit-linear-gradient(bottom, #1dadff 0%, #FF00FF 100%);
+    /*box-shadow: #010753 0 0 300px 200px;*/
 }
 
-.light1_play_yes
+.light1.play_yes
 {
-    left: 110%;
-
     -webkit-transform: rotate(160deg);
        -moz-transform: rotate(160deg);
         -ms-transform: rotate(160deg);
@@ -60,19 +65,13 @@ body
 
 .light2
 {
-    background: -webkit-linear-gradient(-45deg,
-        #003fff 2%,
-        #ffffff 14%,
-        #003fff 46%,
-        #00ff9d 68%,
-        #ffffff 85%,
-        #00ff9d);
+    /*background: -webkit-linear-gradient(bottom, #ff1f4e 0%, #00ff12 100%);*/
+    background: #fdff3b;
+    /*box-shadow: #3c0a47 0 0 300px 200px;*/
 }
 
-.light2_play_yes
+.light2.play_yes
 {
-    left: 110%;
-
     -webkit-transform: rotate(-80deg);
        -moz-transform: rotate(-80deg);
         -ms-transform: rotate(-80deg);
@@ -86,28 +85,27 @@ body
         #fff,
         #fff 25%,
 
-        #000 25.1%,
-        #000 27%,
+        #3c3c3c 25.1%,
+        #3c3c3c 27%,
 
         #0096ff 27.1%,
         #0096ff 50%,
 
-        #000 50.1%,
-        #000 52%,
+        #3c3c3c 50.1%,
+        #3c3c3c 52%,
 
         #fff 52.1%,
         #fff 75%,
 
-        #000 75.1%,
-        #000 77%,
+        #3c3c3c 75.1%,
+        #3c3c3c 77%,
 
         #0096ff 77.1%);
+    /*box-shadow: #3c3c3c 0 0 300px 200px;*/
 }
 
-.light3_play_yes
+.light3.play_yes
 {
-    left: 110%;
-
     -webkit-transform: rotate(80deg);
        -moz-transform: rotate(80deg);
         -ms-transform: rotate(80deg);
